@@ -1,12 +1,12 @@
 """
-Final Year Bachelor's Project: Chat with Multiple Audio & Documents
+Final Year Bachelor's Project: RAG Multimodal Chatbot for Audio, Video & Documents
 
-Author: Khushmeey
+Author: Khushmeet
 Date: 2024-04-15
 Course: Bachelor of Technology in Computer Science Engineering
 
 Description:
-This Streamlit application allows users to upload multiple audio (MP3, WAV, etc.)
+This Streamlit application allows users to upload multiple audio, video (MP4, MP3, WAV, etc.)
 and document (PDF, DOCX, TXT) files. It processes these files by:
 1. Transcribing audio using OpenAI's Whisper model (via Transformers library).
 2. Extracting text from documents using PyPDFLoader, python-docx, and textract.
