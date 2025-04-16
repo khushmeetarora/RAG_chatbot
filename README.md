@@ -7,7 +7,7 @@
 
 ## 📄 Project Description
 
-This project is a Streamlit web application developed as part of my final year Bachelor's work. It allows users to upload multiple audio files (e.g., MP3, WAV) and documents (PDF, DOCX, TXT) simultaneously. The application processes these files to extract or transcribe their content, embeds the text using sentence transformers, and stores the embeddings in a local FAISS vector store cache.
+This project is a Streamlit web application developed as part of my final year Bachelor's work. It allows users to upload multiple audio, video files (e.g., MP4, MP3, WAV) and documents (PDF, DOCX, TXT) simultaneously. The application processes these files to extract or transcribe their content, embeds the text using sentence transformers, and stores the embeddings in a local FAISS vector store cache.
 
 Users can then engage in a conversation with a Large Language Model (LLM), specifically a quantized Mistral-based model run locally using LlamaCpp. The LLM uses the combined context retrieved from *all* currently uploaded and active files (via LangChain's RAG capabilities) to answer user questions. This demonstrates the ability to synthesize information from diverse sources in a conversational manner.
 
@@ -121,16 +121,26 @@ Users can then engage in a conversation with a Large Language Model (LLM), speci
 ## 📂 Project Structure
 
 ├── app.py # Main Streamlit application code
+
 ├── config.py # Configuration variables (paths, model IDs, parameters)
+
 ├── requirements.txt # Python dependencies
+
 ├── README.md # This file
+
 ├── .gitignore # Specifies intentionally untracked files for Git
+
 ├── vector_store_cache/ # Directory for cached FAISS vector stores (auto-created)
+
 ├── models/ # Directory to place downloaded LLM model file (needs manual creation)
+
+
 │ └── [your_model.gguf] # (Download and place the LLM GGUF file here)
-└── [sample_files/] # (Optional: Use small sample files for testing)
-  ├── sample.mp3
-  └── sample.pdf
+
+└── [sample_files/sample.mp3] # (Optional: Use small sample files for testing)
+
+└── [sample_files/sample.pdf]
+
 ## ⚠️ Limitations
 
 *   **Resource Intensive:** Running Whisper (especially larger variants) and the LLM requires significant RAM and CPU, or VRAM if using GPU acceleration. Performance heavily depends on hardware.
