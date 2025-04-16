@@ -3,7 +3,7 @@
 **Author:** Khushmeet
 **Course:** Bachelor of Technology in Computer Science Engineering
 **Date:** April 2024
-**Repository Link:** 
+**Repository Link:** https://github.com/khushmeetarora/RAG_chatbot.git
 
 ## 📄 Project Description
 
