@@ -1,0 +1,45 @@
+# requirements.txt
+
+# --- Core Framework ---
+streamlit==1.35.0
+streamlit-chat==0.1.1         # For chat UI components
+
+# --- LangChain & LLM Integration ---
+# Note: Versions pinned from original list. Consider compatibility if upgrading.
+langchain==0.0.154
+langchain-community==0.0.11
+langchain-core==0.1.9
+llama-cpp-python==0.2.24     # CRITICAL: Requires C++ compiler (CMake, build tools). Check official docs for install help. Model compatibility needed.
+PyYAML==6.0.1                 # Often a dependency for LangChain configuration
+
+# --- Embeddings & Vector Store ---
+sentence-transformers==2.2.2  # For loading embedding models from Hugging Face
+faiss-cpu==1.7.4              # For similarity search. Use 'faiss-gpu' if CUDA is correctly set up.
+# protobuf==3.20.3            # May be needed by FAISS or Sentence Transformers, keep if necessary
+
+# --- Speech Recognition (Whisper) ---
+# Note: Using specific transformers version. Ensure compatibility with torch/accelerate.
+transformers==4.42.0
+torch==2.1.2                  # Ensure compatibility with your system (CPU/CUDA version).
+accelerate==0.25.0            # Helps with efficient model loading/distribution.
+safetensors==0.4.3            # Often required for newer model formats.
+# tokenizers==0.19.1          # Usually installed as a dependency of transformers.
+
+# --- Document Loading & Processing ---
+pypdf==3.17.4                 # For loading text from PDF files (used by PyPDFLoader)
+python-docx==1.1.2            # For loading text from .docx files
+textract==1.6.3               # Fallback text extractor. MAY REQUIRE OS-LEVEL dependencies (e.g., pdftotext, antiword, tesseract-ocr). See textract docs & README.
+
+# --- Utilities ---
+requests==2.31.0              # Standard for HTTP requests (e.g., model downloads)
+numpy==1.26.3                 # Fundamental package for numerical operations
+tqdm==4.66.1                  # Progress bars, often used by Hugging Face libs
+huggingface-hub==0.23.2       # For interacting with the Hugging Face Hub (downloading models)
+# python-dotenv==1.0.0        # Uncomment if using a .env file for configuration (e.g., API keys, paths)
+# packaging==23.2             # Usually installed as a dependency.
+
+# --- Optional but potentially useful LangChain dependencies ---
+# SQLAlchemy==2.0.25          # If using SQL-based memory or stores
+# pydantic==1.10.13           # Often required by LangChain/FastAPI, check version compatibility
+# tenacity==8.2.3             # Retry logic, used by some LangChain components
+# typing-extensions==4.12.2   # Backported typing features, may be needed by dependencies
