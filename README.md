@@ -109,6 +109,15 @@ Users can then engage in a conversation with a Large Language Model (LLM), speci
     ```
 5.  The application should open automatically in your web browser.
 
+## 🖱️ Usage
+
+1.  Use the sidebar to upload one or more audio, video and/or document files.
+2.  Wait for the application to process the files. Status updates will appear in the sidebar. Processing involves transcription/text extraction, embedding generation, and vector store creation/caching.
+3.  Once processing is complete for at least one file, the "Active Files in Context" list will update, and the chat interface will become active (using the combined context).
+4.  Type your questions about the content of the uploaded files into the chat input box at the bottom and press Enter or click Send.
+5.  The LLM will generate a response based on the information retrieved from the relevant sections of your uploaded files.
+6.  Use the "Clear Session & Start Over" button to remove all files and chat history and begin with a fresh context.
+
 ## 🖼️ User Interface Screenshots
 
 **Figure 1: Initial Application Loading State**
@@ -138,15 +147,6 @@ Users can then engage in a conversation with a Large Language Model (LLM), speci
 **Figure 7: Processing Status Update During File Upload and Processing**
 *![Figure 7 Processing Status Update During File Upload and Processing.png](images/Figure%207%20Processing%20Status%20Update%20During%20File%20Upload%20and%20Processing.png)*
 *Caption: The sidebar showing multiple files active (`TSAgent issue.txt`, `Sprint 127 plan.txt`, `arabic_test_content.mp4`, `Cricket.pdf`) and the "Processing Status" area indicating that newly uploaded files are being processed ("Processing uploaded files... Please wait.").*
-
-## 🖱️ Usage
-
-1.  Use the sidebar to upload one or more audio, video and/or document files.
-2.  Wait for the application to process the files. Status updates will appear in the sidebar. Processing involves transcription/text extraction, embedding generation, and vector store creation/caching.
-3.  Once processing is complete for at least one file, the "Active Files in Context" list will update, and the chat interface will become active (using the combined context).
-4.  Type your questions about the content of the uploaded files into the chat input box at the bottom and press Enter or click Send.
-5.  The LLM will generate a response based on the information retrieved from the relevant sections of your uploaded files.
-6.  Use the "Clear Session & Start Over" button to remove all files and chat history and begin with a fresh context.
 
 ## 📂 Project Structure
 
