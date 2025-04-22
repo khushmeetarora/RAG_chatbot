@@ -109,7 +109,7 @@ Users can then engage in a conversation with a Large Language Model (LLM), speci
     ```
 5.  The application should open automatically in your web browser.
 
-## User Interface Screenshots
+## 🖼️ User Interface Screenshots
 
 **Figure 1: Initial Application Loading State**
 *![Figure 1 Initial Application Loading State.png](images/Figure%201%20Initial%20Application%20Loading%20State.png)*
