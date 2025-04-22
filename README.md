@@ -169,7 +169,7 @@ Users can then engage in a conversation with a Large Language Model (LLM), speci
 
 └── [sample_files/sample.mp3] # (Optional: Use small sample files for testing)
 
-└── [sample_files/sample.pdf]
+└── [images] # UI Screenshots used in readme.md
 
 ## ⚠️ Limitations
 
